@@ -1,0 +1,34 @@
+/**{*/
+/*  margin: 0;*/
+/*  padding: 0;*/
+/*  box-sizing: border-box;*/
+/*}*/
+/*!*.movie-container{*!*/
+/*!*  padding: 20px 0;*!*/
+/*!*}*!*/
+/*.movies-grid{*/
+/*  display: grid;*/
+/*  grid-template-columns: repeat(4, 1fr);*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*  text-align: center;*/
+/*  grid-gap: 30px;*/
+/*}*/
+/*!*img{*!*/
+/*!*  width: 100%;*!*/
+/*!*}*!*/
+/*.column{*/
+/*  padding: 30px 30px;*/
+/*  display: flex;*/
+/*}*/
+/*.actors{*/
+/*  display: grid;*/
+/*  grid-template-columns: repeat(3, 1fr);*/
+/*  padding: 30px 30px;*/
+/*}*/
+/*.info{*/
+/*  margin: 30px;*/
+/*}*/
+.bg-of-movie{
+background-image: linear-gradient(to right, rgba(0.00%, 0.00%, 0.78%, 1.00) 150px, rgba(0.00%, 0.00%, 0.78%, 0.84) 100%);
+}
