@@ -38,9 +38,9 @@ const Movies = () => {
                         <div className="col-md-3 col-sm-4 col-6 mb-3">
                             <div key={item.id}>
                                 <Link to={`/movie/${item.id}`}>
-                                    <img
-                                        src={`https://www.themoviedb.org/t/p/w220_and_h330_bestv2/${item.backdrop_path}`}
-                                        alt={item.title} className="w-100"/>
+                                    <img style={{objectFit:'cover'}}
+                                        src={`https://www.themoviedb.org/t/p/w220_and_h330_face/${item.poster_path}`}
+                                        alt={item.title} className=""/>
                                     <h5 className="mt-4">{item.original_title}</h5>
                                     <p>{item.release_date}</p>
                                 </Link>

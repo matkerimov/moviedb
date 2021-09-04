@@ -29,6 +29,32 @@
 /*.info{*/
 /*  margin: 30px;*/
 /*}*/
-.bg-of-movie{
-background-image: linear-gradient(to right, rgba(0.00%, 0.00%, 0.78%, 1.00) 150px, rgba(0.00%, 0.00%, 0.78%, 0.84) 100%);
-}
+/*.bg-of-movie{*/
+/*background-image: linear-gradient(to right, rgba(0.00%, 0.00%, 0.78%, 1.00) 150px, rgba(0.00%, 0.00%, 0.78%, 0.84) 100%);}*/
+/*}*/
+/*.movie-info{*/
+/*!*    object-fit: contain;*!*/
+/*!*}*!*/
+/*.cart-of-actor{*/
+/*    margin-top: 10px;*/
+/*    margin-bottom: 10px;*/
+/*    margin-left: 10px;*/
+/*    margin-right: 4px;*/
+/*    border: 1px solid rgba(var(--lightGrey), 1);*/
+/*    padding-bottom: 10px;*/
+/*    border-radius: var(--imageBorderRadius);*/
+/*    overflow: hidden;*/
+/*!*    *!*/
+/*    min-width: 140px;*/
+/*    width: 140px;*/
+/*    background-color: #fff;*/
+/*!*    *!*/
+/*    box-shadow: 0 2px 8px rgb(0 0 0 / 10%);*/
+/*    border: 1px solid rgba(var(--lightGrey), 1);*/
+/*    background-color: #fff;*/
+/*}*/
+/*img{*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    object-fit: contain;*/
+/*}*/
