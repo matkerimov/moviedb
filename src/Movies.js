@@ -7,7 +7,7 @@ const Movies = () => {
     const [movies, setMovies] = useState([])
 
     useEffect(() => {
-        axios(`http://api.themoviedb.org/3/discover/movie?page=${page}&api_key=6f19f87e3380315b9573c4270bfc863c`)
+        axios(`https://api.themoviedb.org/3/discover/movie?page=${page}&api_key=6f19f87e3380315b9573c4270bfc863c`)
             .then(({data}) => setMovies(data.results))
     }, [page])
 
