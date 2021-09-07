@@ -54,12 +54,21 @@ const MovieInfo = () => {
                              alt={movie.title}/>
                     </div>
                     <div className="col-md-9">
-                        <h2>Название: {movie.title} </h2>
-                        <h5>Дата: {movie.release_date}</h5>
-                        {/*<h6>{movie.genres.name}</h6>*/}
-                        <h6>Описание: {movie.overview}</h6>
+                        <h1>{movie.title}<span className="text-muted">({movie.release_date.slice(0, 4)})</span></h1>
+                       <div className="d-flex">
+                           <p className="mr-3">{movie.release_date} | </p>
+
+                           {
+                               movie.genres.map(item => (
+                                   <div className="box-">
+                                       <span className="mx-1">{item.name}</span>
+                                   </div>
+                               ))
+                           }
+                       </div>
                         <h6>Рейтинг: {movie.vote_average}</h6>
                         <p>Бюджет: {movie.budget.toLocaleString()}$</p>
+                        <h6>Review: {movie.overview}</h6>
                         <h4>Производители:</h4>
                         {
                             movie.production_companies.map(item =>
@@ -81,7 +90,7 @@ const MovieInfo = () => {
                                     <div key={idx}>
                                         <Link to={`/actor/${item.id}`}>
                                    <span className="cart-of-actor">
-                                       <img
+                                       <img className="mw-100%"
                                            src={item.profile_path ? `https://image.tmdb.org/t/p/w200${item.profile_path}` : 'https://icon-library.com/images/unknown-person-icon/unknown-person-icon-9.jpg'}
                                            alt=""/>
                                        <h6 className="text-center">{item.name}</h6>
