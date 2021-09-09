@@ -37,7 +37,7 @@ const MovieInfo = () => {
                 .then(({data}) => {
                     setTrailers(data.results)
                 })
-        }, [])
+        }, [params.id])
 
 
         if (isLoading || actorsLoading) {

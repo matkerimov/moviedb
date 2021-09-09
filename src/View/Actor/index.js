@@ -26,7 +26,7 @@ const Actor = () => {
                 setActingChronology(data.cast)
             })
 
-    }, [])
+    }, [params.id])
 
     // Вычисление возраста
     const getAge = (actor) => {
