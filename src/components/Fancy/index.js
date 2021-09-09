@@ -6,7 +6,7 @@ const Fancy = ({id}) => {
     return (
         <>
             <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId={id} onClose={() => setOpen(false)}/>
-            <button className="btn-primary" onClick={() => setOpen(true)}>VIEW DEMO</button>
+            <button className="btn-primary" onClick={() => setOpen(true)}>VIEW Trailers</button>
         </>
     );
 };
