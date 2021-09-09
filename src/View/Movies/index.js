@@ -43,14 +43,14 @@ const Movies = () => {
             <div className="row my-5">
                 {
                     movies.map(item => (
-                        <div className="col-md-3 col-sm-6 col-6 mb-3 ">
+                        <div className="col-md-3 col-sm-6 col col-6 mb-3 ">
                             <div key={item.id} style={{borderRadius: "8px", boxShadow: '0 2px 8px rgb(0 0 0 / 10%)', width: "220px"}}>
                                 <Link to={`/movie/${item.id}`}>
                                     <img style={{objectFit:'cover', borderRadius: "15px 15px 0 0"}}
                                          src={`https://www.themoviedb.org/t/p/w220_and_h330_face/${item.poster_path}`}
-                                         alt={item.title} className=""/>
+                                         alt={item.title} className="movies-img"/>
                                     <div style={{padding: "26px 10px 12px 10px", width: "100%", height: "119px", backgroundColor: "#fff", borderRadius: "0 0 15px 15px "}}>
-                                        <h5 style={{width:'100%', fontSize: "1em", textDecoration: "none"}} className="text-dark mb-1"><b>{item.original_title}</b></h5>
+                                        <h5 style={{width:'100%', fontSize: "1em", textDecoration: "none"}} className="text-dark mb-1 movies-box"><b>{item.original_title}</b></h5>
                                         <p className="text-dark ">{item.release_date}</p>
                                     </div>
                                 </Link>

@@ -53,7 +53,7 @@ const MovieInfo = () => {
                     </div>
                     <div className="col-md-9">
                         <h1>{movie.title}<span className="text-muted">({movie.release_date.slice(0, 4)})</span></h1>
-                        <div className="d-flex">
+                        <div className="d-flex movie-info">
                             <p className="mr-3">{movie.release_date} | </p>
 
                             {
@@ -64,7 +64,7 @@ const MovieInfo = () => {
                                 ))
                             }
 
-                            <span> | {Math.floor(movie.runtime / 60)}ч {Math.floor(movie.runtime % 60)}м</span>
+                            <span className="movie-info-span"> | {Math.floor(movie.runtime / 60)}ч {Math.floor(movie.runtime % 60)}м</span>
                         </div>
                         <h6 className="">Rating: {movie.vote_average * 10}%</h6>
                         <h6 className="my-4">Budget: {movie.budget > 0 ? `$${movie.budget.toLocaleString()}` : '-'}</h6>
@@ -97,10 +97,10 @@ const MovieInfo = () => {
                                     <div key={idx}>
                                         <Link to={`/actor/${item.id}`}>
                                    <span className="cart-of-actor col-sm-6">
-                                       <img style={{width: "200px", height: "250px", objectFit: " cover"}}
+                                       <img
                                             src={item.profile_path ? `https://image.tmdb.org/t/p/w200${item.profile_path}` : 'https://icon-library.com/images/unknown-person-icon/unknown-person-icon-9.jpg'}
                                             alt=""/>
-                                       <h6 className="text-center">{item.name}</h6>
+                                       <h6 className="text-center m-info-text">{item.name}</h6>
                                    </span>
                                         </Link>
 
